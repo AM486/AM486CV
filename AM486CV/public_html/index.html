@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AEM486CV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>        
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>      
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-1.11.3.min.js" type="text/javascript">      </script>
+        <script src="js/bootstrap.js" type="text/javascript" ></script>
+        <script src="js/jquery.backstretch.min.js" type="text/javascript" ></script>
+        
+        <script>   
+            
+            
+            jQuery(document).ready(function() {
+                
+                $.backstretch([
+                        "images/back_1.jpg",
+                        "images/back_2.jpg",
+                        "images/back_3.jpg",
+                        "images/back_4.jpg",
+                        "images/back_5.jpg"
+                    ], {
+                    fade: 750,
+                    duration: 3000
+                });
+                
+                
+                
+                $('.nav li a').on('click', function() {                
+                    $(this).parent().parent().find('.active').removeClass('active');
+                    $(this).parent().addClass('active');
+                });
+                
+                $('a[href*=#]:not([href=#])').click(function() {
+                  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                      $('html,body').stop().animate({
+                        scrollTop: target.offset().top
+                      }, 1000);                      
+                      return false;
+                    }
+                  }
+                }); 
+                
+                
+              var skillsTop = $('#skills').offset().top;
+                jQuery(window).scroll( function() {
+                                    
+                    if( skillsTop>0){
+                     
+                        $('.bar1').stop().animate({width:'70%'});
+                        $('.bar2').stop().animate({width:'60%'});
+                        $('.bar3').stop().animate({width:'80%'});
+                        $('.bar4').stop().animate({width:'75%'});
+                        $('.bar5').stop().animate({width:'60%'});
+                        $('.bar6').stop().animate({width:'80%'});
+                        $('.bar7').stop().animate({width:'60%'});
+                        $('.bar8').stop().animate({width:'90%'});                   
+                
+                    }
+                    
+                });  
+                
+            });
+
+            
+            
+        </script>
+        
+    </head>
+    <body  data-spy="scroll" data-target="#nav" >
+        <div id="maindiv"  >
+            <div id="sidepane" class="col-md-5">
+                
+			<div id="logo">			
+				<h1 style="color: rgb(255, 255, 255);"><a href="#profile" style="color: rgb(255, 255, 255);"><img src="images/uth_logo.png" width="100px" height="100px"></a></h1>
+				<h2 class="sub">University of Thessaly</h2>
+                                <h4 class="sub">CE 426 Web Technologies</h4>
+                                <h5 class="sub">Vartholomaios Argirios AEM: 486</h5>
+			</div>
+			<nav id="nav" >				
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li  ><a href="#profile" >Profile <span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                                    <li ><a href="#skills">Skills <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></a></li>
+                                    <li ><a href="#works">Works <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></a></li>
+                                    <li ><a href="#contact">Contact <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+                                </ul>
+			</nav>		
+            </div>
+            <div id="mainpane" class="col-md-7" >
+                <div id="nomore" class="">				
+                        <a href="#profile"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a> 
+                </div>
+	
+		<div id="content" style="padding-bottom: 459px;">
+			<div id="profile" class="panel box ">
+			
+                            <div class="circular" id="photo" > </div>
+                            <div class="in row">
+                                <div id="me" class="col-md-6">
+                                    <h2>Who am I?</h2>
+                                    My name is Vartholomeos  Argirios  and I am a student at the University of Thessaly an I have great 
+                                    interest in Web Development, Web Design and the Web Technologies
+                                    in general.
+                                </div>
+                                    <div id="about" class="col-md-6">
+                                    <h2>What is this?</h2>
+                                    This is a personal website I created as a project for the CE426 Web Technologies  
+                                    course to showcase my talents and my works.
+                                </div>
+                            </div>
+			</div>
+			
+			<div id="skills" class="panel box">
+			
+				<div class="in">
+
+                                    <h2>Skills</h2>
+                                    <h5>Java</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar bar1 " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%; max-width: 70%;">
+
+                                        </div>
+                                    </div>
+                                    <h5>C++</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar  bar2 " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;max-width: 60%">
+
+                                        </div>
+                                    </div>
+                                    <h5>JS</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar  bar3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%; max-width: 80%;">
+
+                                        </div>
+                                    </div>
+                                    <h5>Python</h5>
+                                    <div class="progress">
+                                            <div class="progress-bar bar4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;max-width: 75%">
+
+                                        </div>
+                                    </div>
+                                    <h5>Android Development</h5>
+                                    <div class="progress">
+                                            <div class="progress-bar bar5" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;max-width: 60%">
+
+                                        </div>
+                                    </div>
+
+                                    <h5>Web Design</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar bar6" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;max-width: 80%">
+
+                                        </div>
+                                    </div>
+                                    <h5>Photoshop</h5>
+                                    <div class="progress">
+                                            <div class="progress-bar bar7" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;max-width: 60%">
+
+                                        </div>
+                                    </div>
+                                    <h5>Laziness</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar bar8" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%;max-width: 90%">
+
+                                        </div>
+                                    </div>
+					
+
+				</div>
+
+			</div>
+			
+			<div id="works" class="panel box">
+                            <div class="in">
+
+                                            <h2>Works</h2>
+
+                                            <div class="list-group">
+                                                <a href="http://www.reprotime.gr" target="_blank" class="list-group-item"><img src="images/repro-logo.jpg" width="120px" height="50px" alt=""/>Reprotime</a>                                                
+                                                <a href="http://www.e-leoforos.gr/" target="_blank" class="list-group-item"><img src="images/eleoforos-logo.jpg" width="120px" height="50px" alt=""/>e-leoforos</a>                                    
+                                                <a href="http://www.tilematikidirect.gr/" target="_blank" class="list-group-item"><img src="images/tilematiki-logo.png" width="120px" height="50px" alt=""/>Τηλεματική Direct</a>
+                                              </div>
+
+                            </div>
+				
+			</div>
+			
+			
+			<div id="contact" class="panel box">
+			
+                            <div class="in">
+
+                                    <h2>Contact</h2>
+
+                                    <div class="row">
+                                <div  class="col-md-6 ">
+                                    <p>Please don't hesitate to contact me for more information about my work.
+                                    I am available Mon - Sat, Sunday is a day of rest.</p>
+                                    <address>
+                                        <strong><i class="fa fa-envelope"></i> </strong><a href="#contact">arvartho@gmail.com</a>
+                                    </address>
+                                    <address>
+                                            <strong><i class="fa fa-phone-square"></i> </strong>xxx xxx xxxx
+                                    </address>
+
+                                    <ul id="social" class="row">						
+                                        <li class="facebook col-md-1" ><a target="_blank" href="http://facebook.com/arvartho/" style="color: rgb(255, 255, 255);"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="twitter col-md-1" ><a href="http://twitter.com/arvartho" style="color: rgb(255, 255, 255);"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="linkedin col-md-1"><a href="https://www.linkedin.com/pub/argiris-vartholomeos/a7/608/681" style="color: rgb(255, 255, 255);"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.668933043887!2d22.947806015575708!3d39.36373322692512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a76c6171a7a889%3A0xaaed26fab92aad98!2sKonstanta+136%2C+V%C3%B3los+382+21!5e0!3m2!1sen!2sgr!4v1443918848117" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                                         
+                            </div>
+                                   
+                            <div id="legal"><hr> Developed by Argirios Vartholomaios 
+                                all Rights Reserved  © 2015  .</div>
+
+                            </div>
+
+			</div>
+		
+		</div>
+		
+            </div>
+        </div>
+    </body>
+</html>

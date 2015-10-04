@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+  
+    Author     : RG
+*/
+body{
+/*    background: url(images/back_2.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    color: #adadad!important;
+    background-size:cover;
+    position: relative;
+}
+
+#maindiv{    
+    height: 100vh;
+    position: relative;
+}
+
+#sidepane{    
+    
+    background-color: red;
+    height:100vh;
+    position: fixed;
+    box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
+    opacity: 0.9;
+    background: url(images/trans.png) repeat;
+    z-index: 1000;    
+}
+
+
+#mainpane{
+   /*background-color: green;*/
+   height:100vh;   
+   float: right; 
+   background: transparent;
+/*   width: 100%;*/
+}
+
+#sidepane, #side{
+    text-align: right;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#nav{
+    width: 50%;
+    margin-top: 60px;
+    overflow: hidden;  
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#nav ul{
+    list-style-type: none;
+}
+
+#nav ul li{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#nav ul li a {
+    font-size: 16px;
+    font-style: normal;
+    text-align: right;
+    color:#adadad;
+}
+
+#nav ul li span {
+    padding-left: 1em;
+}
+
+a:hover{
+   background-color: transparent !important; 
+   color:#fff!important;
+}
+a:focus{
+   background-color: transparent !important;    
+}
+
+#logo{
+    width: 100%;
+    margin-top: 10vh;
+    box-shadow: 0px 2px 2px  rgba(173,173,173,0.3);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+div#me,div#about {
+    height: 100%;
+}
+
+div#me:hover,div#about:hover{
+    color: #fff!important;
+   
+    cursor:default;
+}
+
+
+
+div.circular {
+	width: 20em;
+	height: 20em;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(images/profile.jpg) no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin: auto;
+        margin-bottom: 5vh;
+	opacity: 1;        
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 5px 8px rgba(0, 0, 0, .8);
+	}
+
+
+.panel{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 20vh;
+}
+
+.in{
+    background: url(images/trans.png) repeat;
+    padding: 1em 2em 1em 2em;
+    border-radius: 5px;
+}
+
+#skills h5:hover{
+    color: #fff!important;
+    cursor:default;
+}
+.progress{
+    width: 100%;
+    color: #010101;
+}
+
+.progress-bar{
+    /*width: 5% !important;*/
+ }
+
+ #nomore {
+     width: 5em;
+     height: 5em;
+     position: fixed;
+     right: 1%;
+     top:90%;
+     color: #adadad;
+     background: url(images/trans.png) repeat;
+     border-radius: 5px;
+ }
+#nomore:hover {
+    opacity: 0.8;
+ }
+ #nomore a{
+     display: block;
+     padding: 0px!important;
+     text-align: center;
+     height: 100%;
+     width: 100% ;
+ }
+ #nomore span{
+    color: #adadad;
+    font-size: 25px;
+    height: 100%;
+    width: 100% ;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+ }
+  #nomore a span:hover{
+     color: #fff!important;    
+ }
+ .list-group-item img{
+     padding: .5em 1em .5em .5em;
+     height: 3em;
+     /*padding-left: 25%;*/
+ }
+ a.list-group-item{
+      opacity: .5;
+ }
+ a.list-group-item:hover{
+    opacity: 1!important;
+ }
+ 
+ #contact a{
+    text-decoration: none;
+    color: #adadad!important;
+ }
+ #contact a:hover{
+    color: #fff!important;
+ }
+ 
+ #social{
+     list-style-type: none;     
+     padding-left: 0;     
+ }
+ 
+ #social a{
+     font-size: 20px;
+     color: #adadad!important;
+ }
+
+ 
+ #legal{
+     margin-top: 5em;
+     font-size: 10px;
+     color: #adadad;
+ }
+
+ #map{
+    /* width: 50%; */
+    /* height: 100%; */
+}
